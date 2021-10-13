@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    margin: 25px 15px;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.slogan {
+    font-size: 17px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.cards {
+    margin-top: 40px;
+}
+
+.card {
+    margin: 20px 0;
+    height: 225px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: #ddd 0 10px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid hsl(180, 62%, 55%);
+}
+
+.card:nth-child(2)::before {
+    border: 3px solid hsl(0, 78%, 62%);
+}
+
+.card:nth-child(3)::before {
+    border: 3px solid hsl(34, 97%, 64%);
+}
+
+.card:nth-child(4)::before {
+    border: 3px solid hsl(212, 86%, 64%);
+}
+
+h3 {
+    margin: 30px 30px 10px 30px;
+    text-align: left;
+    font-size: 16px;
+}
+
+p {
+    text-align: left;
+    margin: 0px 30px 30px 30px;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+img {
+    margin: 0 30px;
+    align-self: flex-end;
+}
